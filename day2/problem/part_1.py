@@ -31,7 +31,7 @@ def is_safe_report(report: List[int]) -> bool:
 
 
 def get_safe_reports(reports: List[int]) -> List[List[int]]:
-    return list(filter(lambda r: is_safe_report(r), reports))
+    return list(filter(is_safe_report, reports))
 
 
 def get_safe_reports_count(reports: List[List[int]]) -> int:
